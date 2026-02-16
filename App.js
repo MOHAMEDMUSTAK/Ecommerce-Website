@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import BuyItems from './BuyItems';
 import './App.css';
-
 function App() {
   return (
     <Router>
@@ -14,5 +13,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
