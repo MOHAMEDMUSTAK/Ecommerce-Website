@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
-
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
   const navigate = useNavigate();
-
   const handleLogin = (e) => {
     e.preventDefault();
     if (!email || !password) {
@@ -18,7 +15,6 @@ const Login = () => {
       navigate('/buy-items');
     }
   };
-
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleLogin}>
@@ -48,4 +44,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+eport default Login
